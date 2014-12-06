@@ -1,0 +1,107 @@
+body{
+	font-family: 'Raleway';
+	margin: 0;
+	padding: 0;
+}
+
+.hero{
+	background: url('../images/flowers2.jpg') no-repeat top; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+nav{
+
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 20px;
+	font-family: 'Raleway';
+}
+
+a{
+	color: #fff;
+}
+
+.intro{
+	width: 100%px;
+	margin: 0 auto;
+	padding: 15% 0;
+	text-align: center;
+	font-family: 'Montserrat';
+	color: #fff;
+	line-height: 1;
+}
+
+.intro h1{
+	font-size: 4.5em;
+	margin-top: 20px;
+}
+
+.intro p{
+	margin-top: 15px;
+	font-size: 1.7em;
+}
+
+.icon{
+	margin: 15px 15px 0;
+}
+
+.bio{
+	height: auto;
+	text-align: center;
+	margin: 14% 0;
+}
+
+h3{
+	text-decoration: underline;
+}
+
+.bio p{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#keika{
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 100%;
+}
+
+.projects{
+	padding: 10% 0;
+	height: 600px;
+	background-color: #E6EAFF;
+}
+
+.projects h3{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.project-div{
+	width: 90%;
+}
+
+.project-info{
+	display: inline-block;
+	width: 30%;
+	margin-left: 10%;
+}
+
+.project-img{
+	display: inline-block;
+	max-width: 400px;
+	margin-left: 20%;
+}
