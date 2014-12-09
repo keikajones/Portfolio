@@ -58,6 +58,65 @@ a{
 	margin: 15px 15px 0;
 }
 
+
+/*==================== Bounce In ======================= */
+
+.intro{
+	padding-top: 15%;
+	-webkit-animation-name: bounceInDown;
+	-moz-animation-name: bounceInDown;
+	-o-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/*================= End Bounce In ====================== */
+
 .bio{
 	height: auto;
 	text-align: center;
@@ -71,6 +130,8 @@ h3{
 .bio p{
 	width: 60%;
 	margin: 0 auto;
+	font-family: 'Open Sans';
+	color: #3F3F40;
 }
 
 #keika{
@@ -80,8 +141,11 @@ h3{
 }
 
 .projects{
-	padding: 10% 0;
-	height: 600px;
+	padding: 5% 0;
+	padding-bottom: 100px;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
 	background-color: #E6EAFF;
 }
 
@@ -91,17 +155,98 @@ h3{
 }
 
 .project-div{
-	width: 90%;
+	display: inline-block;
+	width: 500px;
+	margin: 50px auto 0;
+	margin-left: 7%;
+	vertical-align: top;
+	background-color: #E6EAFF;
 }
 
 .project-info{
+	font-family: 'Open Sans';
+	font-size: 0.85em;
+}
+
+.project-info h4{
+	font-size: 1.2em;
+	color: #3F3F40;
+}
+
+.description{
+	width: 100%;
+	color: #3F3F40;
+}
+
+.project-info ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.project-info ul li{
 	display: inline-block;
-	width: 30%;
-	margin-left: 10%;
+	margin-right: 15px;
+}
+
+.img-div{
+
 }
 
 .project-img{
-	display: inline-block;
-	max-width: 400px;
-	margin-left: 20%;
+	max-width: 500px;	
 }
+
+.project-img:hover{
+	opacity: 0.5;
+}
+
+.contact{
+	/*background-color: #10626D;*/
+	background-color: #163955;
+	height: 400px;
+}
+
+.contactMe{
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+.contactMe h1{
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
+}
+
+button{
+	width: 400px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background-color: #266191;
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: 1em;
+}
+
+button:hover{
+	background-color: #fff;
+	color: #266191;
+	cursor: pointer;
+}
+
+/*@media (max-width: 810px){
+	.project-info{
+		width: 100%;
+	}
+
+	.description{
+		width: 90%;
+	}
+
+	.img-div{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+*/
